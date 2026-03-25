@@ -49,7 +49,7 @@ The application does not properly sanitize input beyond the required digits
 ---
 
 ### Step 4: SQL Injection Exploit
-I tested the payload:`OR 1=1`
+I tested the payload: `OR 1=1`
 
 
 ➡️ Result:
@@ -61,7 +61,7 @@ This condition always evaluates to TRUE, bypassing query restrictions
 ---
 
 ### Step 5: Command Injection
-I tested:`&& whoami`  
+I tested: `&& whoami`
 
 ➡️ Result:
 The system returned:
