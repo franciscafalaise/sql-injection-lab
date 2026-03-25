@@ -84,4 +84,15 @@ Understanding this helps:
 ---
 
 ## Screenshots
-(Add your lab screenshots here showing your 100% score and results)
+
+<img width="1451" height="776" alt="Screenshot 2026-03-24 at 11 41 56 PM" src="https://github.com/user-attachments/assets/335e7af2-b65a-48b4-ae54-4ff34c123b1b" />
+<img width="1457" height="780" alt="Screenshot 2026-03-24 at 11 42 13 PM" src="https://github.com/user-attachments/assets/f836f0ca-5d71-4b4b-8ad1-edda04b45cc0" />
+<img width="1429" height="762" alt="Screenshot 2026-03-24 at 11 42 26 PM" src="https://github.com/user-attachments/assets/da393732-21d7-4bd6-bf0c-d9d9fceef0de" />
+
+## How to Prevent This
+- Use parameterized queries (prepared statements)
+- Validate and sanitize all user input
+- Implement least privilege access
+- Use web application firewalls (WAF)
+
+  
