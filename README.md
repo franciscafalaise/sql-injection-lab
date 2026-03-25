@@ -80,6 +80,12 @@ The application is vulnerable to command execution
 - Command injection possible
 - Sensitive system information exposed
 
+## Attacker Perspective
+If I were an attacker, I could:
+- Enumerate account data using SQL injection
+- Extract sensitive financial information
+- Identify system-level users for further exploitation
+- Potentially escalate access depending on system configuration
 ---
 
 ## What I Learned
@@ -103,7 +109,21 @@ The application is vulnerable to command execution
 - Sanitize all user inputs
 - Apply least privilege access controls
 
+## Detection & Monitoring
+Indicators of this attack may include:
+- Unusual input patterns (e.g., `OR 1=1`)
+- Multiple failed or abnormal queries
+- Unexpected command execution attempts
+- Logs showing injection-like syntax
+
+Monitoring tools such as SIEM solutions could detect these anomalies.
 ---
+## How I Would Handle This in a Real Environment
+- Escalate the vulnerability to the security team
+- Document the issue in a ticketing system
+- Recommend input validation fixes
+- Monitor logs for repeated exploitation attempts
+- Assist in containment if the system is compromised
 
 ## Screenshots
 (Add your screenshots here showing your lab results and score)<img width="1451" height="776" alt="Screenshot 2026-03-24 at 11 41 56 PM" src="https://github.com/user-attachments/assets/9480ce3b-2c63-44c8-acdc-0604087a98b1" />
