@@ -130,5 +130,12 @@ Monitoring tools such as SIEM solutions could detect these anomalies.
 <img width="1457" height="780" alt="Screenshot 2026-03-24 at 11 42 13 PM" src="https://github.com/user-attachments/assets/617c58a3-2f8e-40b1-bf26-21111509c1fc" />
 <img width="1429" height="762" alt="Screenshot 2026-03-24 at 11 42 26 PM" src="https://github.com/user-attachments/assets/eda57624-6628-449f-8525-869c4dea7abd" />
 
+## Reflection (My Thought Process)
+While completing this lab, I started thinking less about just getting the correct answers and more about how an attacker would approach the system.
 
+I noticed that once the application accepted five digits, it stopped properly validating the rest of the input. That immediately stood out as a weakness, because it meant additional input could be injected and processed.
+
+When testing inputs like `OR 1=1`, I recognized that the system was not properly handling query logic, which allowed me to bypass restrictions and retrieve unintended data.
+
+This lab helped me understand how small validation issues can lead to serious vulnerabilities, and how important it is to think critically about how systems handle user input.
   
